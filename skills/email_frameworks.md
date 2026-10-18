@@ -60,7 +60,7 @@ Style rules are negotiable. These are not:
 ## What Makes Good Cold Email
 
 ### It's short.
-Under 75 words for email 1. Under 60 for emails 2 and 3. Count them. If you're over, cut.
+Under 110 words for email 1. Under 80 for email 2 and 50 for email 3. Count them. If you're over, cut.
 
 ### It sounds like a person.
 Read it out loud. Does it sound like something you'd actually type to someone? Or does it sound like marketing copy? If it's the latter, rewrite.
@@ -216,7 +216,7 @@ If the draft doesn't clearly hit one of these, it will be ignored no matter how 
 ## Subject Lines
 
 ### Rules
-- Always lowercase
+- Sentence case, not all lowercase
 - 2-5 words max
 - Never include the prospect's name in the subject
 - Never use "quick question" (overused beyond recognition)
@@ -275,7 +275,7 @@ If all three campaigns read like they were written by the same template with dif
 ## Tone Calibration
 
 ### Default tone
-Conversational, direct, helpful. Like a peer reaching out, not a vendor pitching. Write at a 7th grade reading level. Short sentences. Simple words.
+Professional, polite and clear, like a well-run local company writing to a business owner. Complete sentences, correct grammar, no slang, no contractions overload. Still concise and easy to read, never stiff or salesy.
 
 ### Adjustments by prospect
 - **C-suite**: Even shorter. Get to the point faster. Respect their time explicitly.
