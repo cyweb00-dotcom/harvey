@@ -20,7 +20,7 @@ venv/
 linkedin_cookies.json
 
 # Generated during setup/training — contains your product details
-skills/product_knowledge.md
+# skills/product_knowledge.md  (tracked in the CYWEB fork so it syncs to every machine)
 
 # Local agent tooling
 .agents/

@@ -496,7 +496,26 @@ class OpenStreetMap(DiscoveryProvider):
         "attorney": ['office=lawyer'],
         "contractor": ['craft=builder', 'office=construction_company'],
         "landscap": ['craft=gardener', 'shop=garden_centre'],
+        # Local hospitality and personal-service businesses (CYWEB targets).
+        # Order matters: the first matching needle wins, so "beauty" sits
+        # before "salon" and "hair".
+        "restaurant": ['amenity=restaurant'],
+        "tavern": ['amenity=restaurant'],
+        "cafe": ['amenity=cafe'],
+        "café": ['amenity=cafe'],
+        "coffee": ['amenity=cafe'],
+        "baker": ['shop=bakery', 'shop=pastry'],
+        "barber": ['shop=hairdresser', 'shop=barber'],
+        "beauty": ['shop=beauty', 'shop=cosmetics'],
+        "salon": ['shop=hairdresser'],
+        "hair": ['shop=hairdresser'],
+        "clinic": ['amenity=clinic', 'amenity=doctors'],
     }
+
+    # A social-media page in the website tag is not a website. For a seller
+    # of websites those businesses belong in the NO_WEBSITE cohort.
+    SOCIAL_HOSTS = ("facebook.com", "fb.com", "instagram.com", "tiktok.com",
+                    "linktr.ee", "wa.me", "whatsapp.com")
 
     def _tags(self, term: str) -> list[str]:
         """The OSM tags that actually carry this kind of business, or none.
@@ -569,6 +588,8 @@ class OpenStreetMap(DiscoveryProvider):
             if not name:
                 continue
             site = tags.get("website") or tags.get("contact:website") or ""
+            if any(h in site.lower() for h in self.SOCIAL_HOSTS):
+                site = ""
             city = ", ".join(x for x in (tags.get("addr:city"),
                                          tags.get("addr:state")) if x)
             out.append(Business(
@@ -579,7 +600,8 @@ class OpenStreetMap(DiscoveryProvider):
                 address=" ".join(x for x in (tags.get("addr:housenumber"),
                                              tags.get("addr:street")) if x),
                 location=city or query.location,
-                category=tags.get("craft") or tags.get("shop") or tags.get("office") or "",
+                category=(tags.get("craft") or tags.get("shop") or tags.get("office")
+                          or tags.get("amenity") or ""),
                 has_website=bool(site),
                 external_id=f"osm:{el.get('type')}/{el.get('id')}",
                 source_url=f"https://www.openstreetmap.org/{el.get('type')}/{el.get('id')}",

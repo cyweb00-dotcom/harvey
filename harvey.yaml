@@ -1,78 +1,100 @@
 persona:
   name: "Harvey"
-  company: "Your Company"
+  company: "CYWEB"
   role: "Business Development"
-  email: "harvey@yourcompany.com"
-  linkedin: "linkedin.com/in/harvey-yourcompany"
-  tone: "professional, consultative, confident"
+  email: "cyweb00@gmail.com"     # change to the mailbox Harvey actually sends from
+  linkedin: ""
+  tone: "friendly, local, straightforward, confident; plain English, never pushy or corporate"
 
 product:
-  name: "Your Product"
-  description: "Describe what your product does and who it's for"
-  pricing: "Starting at $X/mo"
+  name: "CYWEB Websites"
+  description: >-
+    CYWEB builds modern, professional websites for small and medium local
+    businesses in Cyprus: restaurants, tavernas, cafés, barbershops, hair and
+    beauty salons, clinics, bakeries, shops and hospitality. We build the
+    website first and show the owner a free, no-obligation preview made for
+    their business; they only pay if they like it. After that, one yearly plan
+    covers the domain, hosting, updates and bug fixes. Online-only business,
+    serving Limassol, Nicosia, Larnaca, Paphos and Ayia Napa.
+  pricing: >-
+    One-time build, then a yearly plan (domain + hosting + updates + bug fixes):
+    Landing Page (up to 2 pages) €300 then €100/yr; Starter Website (up to 4
+    pages) €400 then €100/yr; Business Website (up to 6 pages, most popular)
+    €500 then €100/yr; Complete Website (7–9 pages) €600 then €150/yr; Premium
+    Website (10+ pages) €1000 then €200/yr.
   key_benefits:
-    - "Benefit 1"
-    - "Benefit 2"
-    - "Benefit 3"
+    - "See it before you pay: we build a free preview of your website first, no obligation"
+    - "Professional quality from €300, instead of the thousands agencies usually charge"
+    - "One simple yearly plan covers domain, hosting, updates and bug fixes, with no surprise costs"
+    - "Works on mobile, tablet and desktop, with online booking, contact form, menu or prices, and SEO foundations"
+    - "Helps customers find you on Google instead of only on Wolt, Foody or Facebook"
   objection_responses:
-    "too expensive": "I understand budget is important. Most of our clients see ROI within 30 days..."
-    "already have a solution": "That makes sense. Curious — what's the one thing you wish it did better?"
-    "not interested": "No worries at all. Mind if I ask what your current approach looks like?"
+    "too expensive": "Understandable. The Landing Page is €300 once, then €100 a year, and that yearly plan already includes the domain, hosting and updates. Happy to show you a free preview first so you can judge if it's worth it."
+    "already have a website": "Good to hear. We only build new sites, we don't edit other people's, so if yours is working for you, no problem. If it's outdated, I'm happy to show you a fresh preview to compare, no obligation."
+    "facebook / instagram is enough": "Social pages are great for regulars, but people searching on Google for a place nearby land on websites and Maps first. A simple site with your menu, hours and booking catches those people."
+    "not interested": "No problem at all, thanks for letting me know. I won't follow up again."
+    "no time": "That's the point of how we work: we build it first and send you a preview link. It takes a couple of minutes of your time to look at it."
+    "hidden costs": "None. The build is paid once, and the yearly plan covers domain, hosting, updates and bug fixes. If you ever stop the plan, the site stays up until the end of the paid year."
   offer:
-    primary: ""                    # Main offer (e.g., "Monthly subscription starting at $99/mo")
-    entry: ""                      # Low-commitment entry (e.g., "14-day free trial", "Free audit")
-    goal: "book_call"              # Goal of outreach: book_call, start_trial, get_reply
-    booking_method: "calendar_link" # calendar_link, suggest_times, ask_preference
-    booking_url: ""                # Calendar link URL (if using calendar_link method)
-    meeting_duration: "15 minutes" # How long the call is
-    meeting_owner: ""              # Who takes the meeting (name or role)
+    primary: "A professional website built by CYWEB, from €300 one-time plus a yearly plan from €100"
+    entry: "A free, no-obligation preview of a website made for their business. They only pay if they like it."
+    goal: "get_reply"                 # ask if they'd like to see the free preview
+    booking_method: "ask_preference"
+    booking_url: "https://cywebdev.com"
+    meeting_duration: "15 minutes"
+    meeting_owner: "the CYWEB founder, on Google Meet or Zoom"
 
 icp:
   industries:
-    - "SaaS"
-    - "Marketing Agency"
-  company_size: "10-200 employees"
+    - "Restaurants"
+    - "Cafes"
+    - "Barbershops"
+    - "Hair salons"
+    - "Beauty salons"
+    - "Bakeries"
+    - "Dentists"
+    - "Clinics"
+  company_size: "1-50 employees (owner-run local businesses)"
   titles:
-    - "VP Marketing"
-    - "Head of Growth"
-    - "CMO"
-    - "Director of Marketing"
+    - "Owner"
+    - "Co-owner"
+    - "Manager"
+    - "General Manager"
   geography:
-    - "United States"
-  # Roles that signal a company is in-market RIGHT NOW (a company hiring a
-  # "Head of Growth" is shopping for growth tooling). Used for careers-page
-  # scanning and job-board discovery. Empty = fall back to titles above.
+    - "Limassol, Cyprus"
+    - "Nicosia, Cyprus"
+    - "Larnaca, Cyprus"
+    - "Paphos, Cyprus"
+    - "Ayia Napa, Cyprus"
   hiring_signals: []
+  # lat,lng,radius_km. Nicosia is centred south of the Green Line and kept
+  # small so results stay in the Republic of Cyprus side of the city.
+  geo_coordinates:
+    "Limassol, Cyprus": "34.6890,33.0400,10"
+    "Nicosia, Cyprus": "35.1500,33.3650,6"
+    "Larnaca, Cyprus": "34.9200,33.6230,8"
+    "Paphos, Cyprus": "34.7720,32.4300,10"
+    "Ayia Napa, Cyprus": "34.9950,34.0100,10"
 
 channels:
   email:
     enabled: true
-    provider: "gmail"          # gmail (recommended) | microsoft | smtp | instantly
-    max_daily_sends: 50
-    require_approval: true      # native providers: emails wait in the Outbox
-    send_to_risky: false        # also send to catch-all domains (off = safest)
-    max_bounce_rate: 0.05       # pause all sending if bounces exceed this
+    provider: "gmail"
+    max_daily_sends: 20             # start low; raise once replies look healthy
+    require_approval: true          # every email waits for your OK in the Outbox
+    send_to_risky: false
+    max_bounce_rate: 0.05
   linkedin:
-    enabled: true
-    max_daily_connections: 20
-    max_daily_messages: 10
+    enabled: false                  # local Cyprus owners are rarely on LinkedIn
 
 usage:
-  max_daily_claude_percent: 80
+  max_daily_claude_percent: 60      # leaves room for your own Claude work
   heartbeat_interval_minutes: 15
   quiet_hours:
-    start: "22:00"
-    end: "07:00"
-    timezone: "America/New_York"
+    start: "21:00"
+    end: "08:00"
+    timezone: "Asia/Nicosia"
 
-# Optional: check each new recipient with Precleared (precleared.dev) before
-# the first cold email: may cold marketing email go to this address under UK
-# PECR, US CAN-SPAM, Canada's CASL, Germany's UWG and France's rules? Any other
-# answer holds the email back, with the reason in the Outbox. One check per
-# address; 10 a day free without a key, 25 with a free key (PRECLEARED_API_KEY
-# in .env). Applies to the native providers (gmail, smtp).
 compliance:
   precleared:
-    enabled: false
-    sender_country: ""          # GB or US: where your business is based
-    address_source: "unknown"   # published | bought | scraped | given | unknown
+    enabled: false                  # only supports GB/US senders
