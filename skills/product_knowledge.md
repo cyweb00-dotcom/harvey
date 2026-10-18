@@ -74,11 +74,11 @@ preview of a website for their business. Do not push for a call in the first ema
 ## CYWEB house style (overrides any casual-tone guidance)
 Every email must read as professional and polished:
 - Greeting: "Dear [Business name] team," or "Dear [First name]," when the owner's name is known. Never "Hi" or "Hey".
-- Introduce the sender properly in the body: "My name is Harvey, and I represent CYWEB, a web development company based in Cyprus..."
+- Never use the name "Harvey" anywhere. Emails come from the CYWEB team. Introduce the company in one sentence: "CYWEB is a Cyprus web development company that builds professional websites for local businesses."
+- Keep it short: Email 1 under 80 words (signature and opt-out not counted). Three short paragraphs at most.
 - Full, grammatically correct sentences. Courteous wording ("We would be pleased to...", "Would you be interested in...?").
 - Call the offer a "complimentary preview" (never "free": spam filters penalise it), with no obligation.
 - Close with "Kind regards," followed by this signature block:
-  Harvey
-  Business Development | CYWEB
+  The CYWEB Team
   cywebdev.com | +357 99 925492
 - Opt-out line, after the signature: "If you would prefer not to hear from us again, simply reply and let us know, and we will not contact you further."

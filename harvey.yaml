@@ -1,5 +1,5 @@
 persona:
-  name: "Harvey"
+  name: "The CYWEB Team"     # signature name; never sign as Harvey
   company: "CYWEB"
   role: "Business Development"
   email: "cyweb00@gmail.com"     # change to the mailbox Harvey actually sends from

@@ -60,7 +60,7 @@ Style rules are negotiable. These are not:
 ## What Makes Good Cold Email
 
 ### It's short.
-Under 110 words for email 1. Under 80 for email 2 and 50 for email 3. Count them. If you're over, cut.
+Under 80 words for email 1. Under 60 for email 2 and 40 for email 3. Count them. If you're over, cut.
 
 ### It sounds like a person.
 Read it out loud. Does it sound like something you'd actually type to someone? Or does it sound like marketing copy? If it's the latter, rewrite.
