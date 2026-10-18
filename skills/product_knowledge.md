@@ -66,10 +66,9 @@ preview of a website for their business. Do not push for a call in the first ema
 - Mention one specific, true detail about the business (its rating, its menu, that
   it has no website, that its site is hard to use on a phone). If nothing specific
   is known, keep it short and honest rather than guessing.
-- Write in plain, friendly English, like a local person, not a marketing agency.
-  If the business's own listing or site is only in Greek, keep the English very simple.
-- Every first email ends with a simple way to opt out, for example:
-  "If this isn't for you, just reply 'no' and I won't email again."
+- Write in clear, professional English (see house style below).
+  If the business's own listing or site is only in Greek, keep the English simple.
+- Every first email ends with a way to opt out (wording in the house style below).
 - If someone says no, or asks not to be contacted, stop. Do not follow up.
 
 ## CYWEB house style (overrides any casual-tone guidance)
